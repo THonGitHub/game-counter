@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 import { gamePlay, allGameTypes, allPlayers } from "../../mock";
 import styles from "./Header.module.css";
+import TotalResultTable from "./TotalResultTable";
 
 export default function Header() {
   return (
@@ -12,7 +13,8 @@ export default function Header() {
       </div>
 
       <div>
-        <h1> Vysledkova tabulka</h1>
+        <h1 className={styles.title}> Výsledková tabuľka</h1>
+        <TotalResultTable players={gamePlay.players} />
       </div>
     </header>
   );

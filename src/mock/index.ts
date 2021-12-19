@@ -22,6 +22,8 @@ const gameTypeCarcassonne = {
 
 export const allGameTypes = [gameTypeScrabble,gameTypeCarcassonne]
 
+export type GamePlayerType = typeof gamePlayerOne;
+
 const gamePlayerOne = {
     player: playerOne,
     currentGame: [15,0,23, 56],
