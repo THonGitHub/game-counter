@@ -1,21 +1,19 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
+import { gamePlay, allGameTypes, allPlayers } from "../../mock";
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+    <header className={styles.header}>
+      <img src={logo} className={styles.logo} alt="logo" />
+      <div className={styles.main}>
+        <h1>{gamePlay.gameType.name}</h1>
+      </div>
+
+      <div>
+        <h1> Vysledkova tabulka</h1>
+      </div>
     </header>
   );
 }

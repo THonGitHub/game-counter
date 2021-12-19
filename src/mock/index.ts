@@ -23,20 +23,19 @@ const gameTypeCarcassonne = {
 export const allGameTypes = [gameTypeScrabble,gameTypeCarcassonne]
 
 const gamePlayerOne = {
-    playerId: playerOne.id,
+    player: playerOne,
     currentGame: [15,0,23, 56],
     totalWins: 0
 }
 
-
 const gamePlayerTwo = {
-    playerId: playerTwo.id,
+    player: playerTwo,
     currentGame: [16,1,24, 57],
     totalWins: 35
 }
 
 export const gamePlay = {
-    gameTypeId: gameTypeScrabble.id,
+    gameType: gameTypeScrabble,
     players: [gamePlayerOne, gamePlayerTwo],
     totalGames: 35
 }
