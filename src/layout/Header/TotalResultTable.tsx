@@ -1,4 +1,5 @@
 import type { GamePlayerType } from "../../mock";
+import styles from "./Header.module.css";
 
 type Props = {
   players: GamePlayerType[];
@@ -7,10 +8,10 @@ type Props = {
 export default function TotalResultTable(props: Props) {
   const { players } = props;
   return (
-    <table>
+    <table className={styles.table}>
       <tr>
-        <th>name</th>
-        <th>score</th>
+        <th>hráč</th>
+        <th>skóre</th>
       </tr>
       {players.map((item) => (
         <tr>
